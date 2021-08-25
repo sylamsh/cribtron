@@ -1,41 +1,41 @@
-<!DOCTYPE html>
-<html>
-
-<link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
-<style type="text/css">
-
-	body{
-		background: url(squaregrass.jpeg);
-		/*background-color: black;*/
+body{
 		overflow: hidden;
+
+
+		animation-name: backgroundbro;
+		animation-duration: 0.96s;     
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
 	}
-	.bruh{
-	
-		text-align:center; 
-		text-shadow: 2px 2px black;
-		font-size: 40px;
-		color: white;
-
-		position: absolute;
-		top: 300px;
-		bottom:0;
-		right: 0;
-		left: 0;
-		margin: auto;
-	}
-	#hide{
-
-		height: 500px;
-		width:  500px;
-
-		position: absolute;
-		top: 0;
-		bottom:0;
-		right: 0;
-		left: 0;
-		margin: auto;
+	@keyframes backgroundbro{
+		0%{
+			background: url(background1b.png) no-repeat center center fixed; 
+  			-webkit-background-size: cover;
+ 			-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
+			/*background-size: contain;*/
+			/*background-position: center;*/
+			/*background-position: -185px, -120px;*/
+		}
+		50%{
+			background: url(background2b.png) no-repeat center center fixed; 
+  			-webkit-background-size: cover;
+ 			-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
+			/*background-position: center;*/
+			/*background-position: -185px, -120px;*/
+		}
+		100%{
+			background: url(background1b.png) no-repeat center center fixed; 
+  			-webkit-background-size: cover;
+ 			-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
+			/*background-position: center;*/
+			/*background-position: -185px, -120px;*/
+		}
 
 	}
 	#brobutton{
@@ -52,13 +52,13 @@
 		margin: auto;
 	}
 	.crabtron{
-		height: 100px;
-		width: 200px;
-		transform: scale(0.65);
-		animation-name: translate;
-		animation-duration: 40s;
-		animation-timing-function: ease-in;
-		animation-iteration-count: infinite;
+		height: 500px;
+		width: 600px;
+		transform: scale(2);
+/*		animation-name: translate;
+		animation-duration: 3s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;*/
 
 		position: absolute;
 		top: 0;
@@ -66,41 +66,14 @@
 		right: 0;
 		left: 0;
 		margin: auto;
-	}
+/*	}
 	@keyframes translate{
-		0%{
-			transform: scale(0.65) translate(-1000px,-800px); 
+		from{
+			transform:translate(-500px,-500px); 
 		}
-		10%{
-			transform: scale(0.65) translate(1500px,0px);
-		}
-		20%{
-			transform: scale(0.65) translate(-800px,750px);
-		}
-		30%{
-			transform: scale(0.65) translate(0px,800px);
-		}
-		40%{
-			transform: scale(0.65) translate(0px,-800px);
-		}
-		50%{
-			transform: scale(0.65) translate(-1500px,0px);
-		}
-		60%{
-			transform: scale(0.65) translate(1000px,-800px);
-		}
-		70%{
-			transform: scale(0.65) translate(-1500px,0px);
-		}
-		80%{
-			transform: scale(0.65) translate(1500px,0px);
-		}
-		90%{
-			transform: scale(0.65) translate(-1000px,800px);
-		}
-		100%{
-			transform: scale(0.65) translate(0px,800px);
-		}
+		to{
+			transform: translate(500px,0px);
+		}*/
 	}
 	 .emoticon_box{
     	height: 60px;
@@ -110,8 +83,6 @@
     	box-shadow: 4px 4px grey; 
 
     	background-color: white;
-    	opacity: 0;
-
 
     	position: absolute;
 		top: 0;
@@ -120,34 +91,33 @@
 		left: 0;
 		margin: auto;
     }
-	.emoticon{
+	#emoticon{
+		user-select: none;
 		font-family: 'VT323', monospace;
 		letter-spacing: 0px;
 		font-stretch: ultra-condensed;
-		user-select: none;
-	
+		font-size: 60px;
+
 		position: absolute;
-		top: -32px;
+		top: -5px;
 		bottom:0;
 		right: 0;
-		left: 0;
+		left: -5px;
 		margin: auto;
 
 		}
-
+/*
     h1 {
    		font-size: 50px;
-   		user-select: none;
-   		font-family: 'Open Sans', sans-serif;
-    }
+    }*/
 	.mainOvalBody{
 		width: 100px;
 		height: 75px;
 		border-radius: 100px/75px;
 		background-color: silver;
 		border-style: outset;
-		/*border-color: black;*/
-
+		/*border-color: black; 
+*/
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -155,7 +125,7 @@
 		left: 0;
 		margin: auto;
 
-		/*animation-name: badimbo;
+		animation-name: badimbo;
 		animation-duration: 0.96s;     
 		animation-iteration-count: infinite;
 		animation-timing-function: ease-in-out;
@@ -175,7 +145,7 @@
 		}
 		100%{
 			transform: rotate(0deg) translate(0px,0px);
-		}*/
+		}
 	
 	}
 
@@ -186,8 +156,6 @@
 		width: 10px;
 
 		background-color: #00b3b3;
-		opacity: 0;
-
 		
 		border-radius: 50%;
 		border-style: outset;
@@ -200,7 +168,6 @@
 		right: 0;
 		left: 50px;
 		margin: auto;
-
 	}
 	.eyeL{
 		position: absolute;
@@ -215,85 +182,61 @@
 
 	.armHL1,.armHL2,.armHL3,.armHR1,.armHR2,.armHR3{
 		height: 8px;
-		width: 70px;
+		width: 50px;
 		border-radius: 30%;
 		background-color: #909090;
-		opacity: 0;
 
 		/*transform-origin: top; */
 
 		border-style: outset;
+	/*	border-color: black;*/
 	}
-
+	.armHR1,.armHL1{
+	    animation-name: limbone;
+		animation-duration: 0.96s;     
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	}
+	@keyframes limbone{
+		0%{
+			transform: rotate(0deg) translate(0px,0px);
+		}
+		25%{
+			transform: rotate(-10deg) translate(17px,6px);
+		}
+		50%{
+			transform: rotate(0deg) translate(0px,0px);
+		}
+		75%{
+			transform: rotate(10deg) translate(-17px,6px);
+		}
+		100%{
+			transform: rotate(0deg) translate(0px,0px);
+		}
+	}
 	.armHR1{
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		right: 0;
-		left: 120px;
+		left: 135px;
 		margin: auto;
-
-	    animation-name: limbonene;
-		animation-duration: 0.96s;     
-		animation-iteration-count: infinite;
-		animation-timing-function: linear;
 	}
-	@keyframes limbonene{
-		0%{
-			transform: rotate(0deg) translate(0px,0px);
-		}
-		25%{
-			transform: rotate(-10deg) translate(15px,3px);
-		}
-		50%{
-			transform: rotate(0deg) translate(0px,0px);
-		}
-		75%{
-			transform: rotate(10deg) translate(-15px,3px);
-		}
-		100%{
-			transform: rotate(0deg) translate(0px,0px);
-		}
-	}
-	
-
 	.armHL1{
 		position: absolute;
 		top: 0;
 		bottom: 0;
-		right: 120px;
+		right: 135px;
 		left: 0;
 		margin: auto;
-
-	    animation-name: limboneto;
-		animation-duration: 0.96s;     
-		animation-iteration-count: infinite;
-		animation-timing-function: linear;
-	}
-	@keyframes limboneto{
-		0%{
-			transform: rotate(0deg) translate(0px,0px);
-		}
-		25%{
-			transform: rotate(10deg) translate(-15px,3px);
-		}
-		50%{
-			transform: rotate(0deg) translate(0px,0px);
-		}
-		75%{
-			transform: rotate(-10deg) translate(15px,3px);
-		}
-		100%{
-			transform: rotate(0deg) translate(0px,0px);
-		}
 	}
 
 	.armHR2{
 		position: absolute;
-		top: 10px;
+		top: 20px;
 		bottom: 0;
 		right: 0;
-		left: 120px;
+		left: 125px;
 		margin: auto;
 
 		transform-origin: left;
@@ -303,20 +246,20 @@
 	    animation-name: limboRto;
 		animation-duration: 0.96s;     
 		animation-iteration-count: infinite;
-		animation-timing-function: linear;
+		animation-timing-function: ease-in-out;
 	}
 	@keyframes limboRto{
 		0%{
 			transform: rotate(30deg) translate(0px,0px);
 		}
 		25%{
-			transform: rotate(20deg) translate(-17px,20px);
+			transform: rotate(20deg) translate(15px,3px);
 		}
 		50%{
 			transform: rotate(30deg) translate(0px,0px);
 		}
 		75%{
-			transform: rotate(40deg) translate(17px,-20px);
+			transform: rotate(40deg) translate(-15px,3px);
 		}
 		100%{
 			transform: rotate(30deg) translate(0px,0px);
@@ -324,9 +267,9 @@
 	}
 	.armHL2{
 		position: absolute;
-		top: 10px;
+		top: 20px;
 		bottom: 0;
-		right: 120px;
+		right: 125px;
 		left: 0;
 		margin: auto;
 
@@ -338,20 +281,20 @@
 	    animation-name: limboLto;
 		animation-duration: 0.96s;     
 		animation-iteration-count: infinite;
-		animation-timing-function: linear;
+		animation-timing-function: ease-in-out;
 	}
 	@keyframes limboLto{
 		0%{
 			transform: rotate(330deg) translate(0px,0px);
 		}
 		25%{
-			transform: rotate(340deg) translate(17px,20px);
+			transform: rotate(320deg) translate(15px,3px);
 		}
 		50%{
 			transform: rotate(330deg) translate(0px,0px);
 		}
 		75%{
-			transform: rotate(320deg) translate(-17px,-20px);
+			transform: rotate(340deg) translate(-15px,3px);
 		}
 		100%{
 			transform: rotate(330deg) translate(0px,0px);
@@ -359,10 +302,10 @@
 	}
 	.armHR3{
 		position: absolute;
-		top: 67px;
+		top: 85px;
 		bottom: 0;
 		right: 0;
-		left: 85px;
+		left: 95px;
 		margin: auto;
 
 		transform: rotate(60deg);
@@ -371,7 +314,7 @@
 	    animation-name: limboRtri;
 		animation-duration: 0.96s;     
 		animation-iteration-count: infinite;
-		animation-timing-function: linear;
+		animation-timing-function: ease-in-out;
 	}
 	@keyframes limboRtri{
 		0%{
@@ -393,9 +336,9 @@
 	}
 	.armHL3{
 		position: absolute;
-		top:72px;
+		top: 90px;
 		bottom: 0;
-		right: 85px;
+		right: 95px;
 		left: 0;
 		margin: auto;
 
@@ -411,13 +354,13 @@
 			transform: rotate(300deg) translate(0px,0px);
 		}
 		25%{
-			transform: rotate(310deg) translate(1px,-13px);
+			transform: rotate(290deg) translate(1px,13px);
 		}
 		50%{
 			transform: rotate(300deg) translate(0px,1px);
 		}
 		75%{
-			transform: rotate(290deg) translate(1px,13px);
+			transform: rotate(310deg) translate(1px,-13px);
 		}
 		100%{
 			transform: rotate(300deg) translate(0px,0px);
@@ -445,18 +388,14 @@
 	    border-top: 50px outset;
 	    border-left: 10px solid transparent;
 
-	    opacity: 0;
-
 		transform-origin: bottom; 
 
-    }
-    .armDR1b,.armDL2b,.armDR3b{
-		animation-name: tiltne;
+		animation-name: tilt;
 		animation-duration: 0.96s;     
 		animation-iteration-count: infinite;
-		animation-timing-function: linear;
+		animation-timing-function: ease-in-out;
     }
-    	@keyframes tiltne{
+    	@keyframes tilt{
 		0%{
 			transform: rotate(0deg);
 		}
@@ -481,6 +420,8 @@
 		right: 0;
 		left: 185px;
 		margin: auto;
+
+	/*	transform: rotate(330deg);*/
     }
     .armDR2b{
     	position: absolute;
@@ -489,6 +430,8 @@
 		right: 0;
 		left: 175px;
 		margin: auto;
+
+/*		transform: rotate(345deg);*/
     }
     .armDR3b{
     	position: absolute;
@@ -518,36 +461,14 @@
 	    height: 0;
 	    border-top: 50px outset;
 	    border-right: 10px solid transparent;
-		
-		opacity: 0;
-
-		transform-origin: bottom; 
-	}
 	
-	.armDL1b,.armDR2b,.armDL3b{
+		transform-origin: bottom; 
 
-		animation-name: tiltto;
+		animation-name: tilt;
 		animation-duration: 0.96s;     
 		animation-iteration-count: infinite;
 		animation-timing-function: ease-in-out;
     }
-    @keyframes tiltto{
-		0%{
-			transform: rotate(0deg);
-		}
-		25%{
-			transform: rotate(-20deg);
-		}
-		50%{
-			transform: rotate(0deg);
-		}
-		75%{
-			transform: rotate(20deg);
-		}
-		100%{
-			transform: rotate(0deg);
-		}
-	}  
 
     .armDL1b{
     	position: absolute;
@@ -556,7 +477,9 @@
 		right: 185px;
 		left: 0;
 		margin: auto;
-	}
+
+	/*	transform: rotate(30deg);
+    */}
     .armDL2b{
     	position: absolute;
 		top: 115px;
@@ -564,7 +487,9 @@
 		right: 175px;
 		left: 0;
 		margin: auto;
-	}
+
+	/*	transform: rotate(15deg);
+    */}
     .armDL3b{
     	position: absolute;
 		top: 160px;
@@ -578,22 +503,18 @@
     	height: 15px;
     	width: 15px;
 
-    	opacity: 0;
     	background-color: silver;
 
     	border-radius: 50%;
     	border-style: outset;
     /*	border-color: black;
     */
-    }
-
-    .jointR1,.jointR3,.jointL2{
-        animation-name: jointMovesne;
+        animation-name: jointMoves;
 		animation-duration: 0.96s;     
 		animation-iteration-count: infinite;
-		animation-timing-function: linear;
+		animation-timing-function: ease-in-out;
     }
-        @keyframes jointMovesne{
+        @keyframes jointMoves{
 		0%{
 			transform: translate(0px,0px);
 		}
@@ -605,29 +526,6 @@
 		}
 		75%{
 			transform: translate(-17px,3px);
-		}
-		100%{
-			transform: translate(0px,0px);
-		}
-	} 
-	.jointR2,.jointL1,.jointL3{
-        animation-name: jointMovesto;
-		animation-duration: 0.96s;     
-		animation-iteration-count: infinite;
-		animation-timing-function: linear;
-    }
-        @keyframes jointMovesto{
-		0%{
-			transform: translate(0px,0px);
-		}
-		25%{
-			transform: translate(-17px,3px);
-		}
-		50%{
-			transform: translate(0px,0px);
-		}
-		75%{
-			transform: translate(17px,3px);
 		}
 		100%{
 			transform: translate(0px,0px);
@@ -681,69 +579,3 @@
 		left: 115px;
 		margin: auto;
     }
-
-    @keyframes fadein{
-    	from {
-    		opacity: 0;
-    	}
-    	to{
-    		opacity: 1;
-    	}
-    }
-</style>
-<head>
-	<title></title>
-</head>
-<body>
-
-	<div class="bruh" unselectable="on"><h1>Catch me to make me</h1></div>
-	<div id="hide"></div>
-
-	<div class="crabtron">
-		<div class="armHL1"></div>
-		<div class="armDL1b">
-			<div class="armDL1"></div></div>
-		<div class="jointL1"></div>
-
-		<div class="armHL2"></div>
-		<div class="armDL2b">
-			<div class="armDL2"></div></div>
-		<div class="jointL2"></div>
-		
-		<div class="armHL3"></div>
-		<div class="armDL3b">
-			<div class="armDL3"></div></div>	
-		<div class="jointL3"></div>
-		
-		<div class="armHR1"></div>
-		<div class="armDR1b">
-			<div class="armDR1"></div></div>
-		<div class="jointR1"></div>
-		
-		<div class="armHR2"></div>
-		<div class="armDR2b">
-			<div class="armDR2"></div></div>
-		<div class="jointR2"></div>
-		
-		<div class="armHR3"></div>
-		<div class="armDR3b">
-			<div class="armDR3"></div></div>
-		<div class="jointR3"></div>
-
-		<div class="mainOvalBody">
-			<div class="eyeL"></div>
-			<div class="eyeR"></div>
-			<div class="emoticon_box">
-				<div class="emoticon">
-					<h1 unselectable="on">;)</h1>
-					<div id="brobutton"></div>
-				</div>
-			</div>
-		</div>
-		
-	</div>
-	
-
-	<script type="text/javascript" src="theCatch.js"></script>
-</body>
-</html>

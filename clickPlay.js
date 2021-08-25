@@ -12,8 +12,8 @@ button.onclick = function(){
     if(count%2!=0){
     	audio.play();
     	emoti.innerHTML=";)";
-
     }
+    
     else{
     	audio.pause();
     	emoti.innerHTML="=|";
